@@ -1,0 +1,7 @@
+.table {
+  align-self: center;
+  @media screen and (max-width: 720px) {
+    width: 80%;
+  }
+  width: 50%;
+}

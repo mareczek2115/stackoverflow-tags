@@ -1,0 +1,17 @@
+Stronicowana tabela lub lista tagów wraz liczbą powiązanych postów (pole count) ✅
+
+Liczba elementów na stronie konfigurowalna przez pole liczbowe nad tabelą/listą ✅
+
+Wybór pola i kierunku sortowania przez element UI własnego wyboru/projektu ✅
+
+Przygotować odpowiednie stany dla etapu ładowania danych i błędów przy pobieraniu ✅
+
+Wykorzystać gotową bibliotekę komponentów UI, np. MUI ✅
+
+Wykorzystać gotowe biblioteki do zarządzania stanem i pobierania danych (wybór wedle uznania, stosownie do stopnia komplikacji projektu i z myślą o jak najszybszej realizacji zadania) ✅
+
+Przygotować Storybook do prezentacji wykorzystanych komponentów składowych aplikacji ✅
+
+Rozwiązanie opublikować w repozytorium GitHub ✅
+
+Całość powinna się uruchamiać wyłącznie po wykonaniu komend "npm ci", "npm start", "npm run storybook" ✅

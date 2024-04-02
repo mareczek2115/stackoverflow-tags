@@ -1,0 +1,21 @@
+.pagination-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#pagination-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  @media screen and (max-width: 1040px) {
+    width: 120px;
+  }
+}
+
+#pagination-input {
+  @media screen and (max-width: 1040px) {
+    width: 80px;
+  }
+}
