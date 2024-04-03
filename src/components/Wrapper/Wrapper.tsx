@@ -9,8 +9,8 @@ import { Table } from '../Table/Table';
 import { Error } from '../Error/Error';
 
 import { IApiRequest, IApiResponse, ITag } from '../../common/types';
-import { fetchTags } from '../../common/utils';
-import { useTempStore } from '../../store/store';
+import { fetchTags, triggerEvent } from '../../common/utils';
+import { useTagStore } from '../../store/store';
 
 import './Wrapper.css';
 
@@ -23,16 +23,16 @@ export const Wrapper: FunctionComponent<{
 
   const [visibility, setVisibility] = useState<boolean>(false);
 
-  const tags = useTempStore((state: any) => state.tags);
-  const updateTags = useTempStore((state: any) => state.updateTags);
+  const tags = useTagStore((state: any) => state.tags);
+  const updateTags = useTagStore((state: any) => state.updateTags);
 
-  const page = useTempStore((state: any) => state.page);
-  const updatePage = useTempStore((state: any) => state.updatePage);
+  const page = useTagStore((state: any) => state.page);
+  const updatePage = useTagStore((state: any) => state.updatePage);
 
-  const pageSize = useTempStore((state: any) => state.pageSize);
+  const pageSize = useTagStore((state: any) => state.pageSize);
 
-  const sortBy = useTempStore((state: any) => state.sortBy);
-  const orderBy = useTempStore((state: any) => state.orderBy);
+  const sortBy = useTagStore((state: any) => state.sortBy);
+  const orderBy = useTagStore((state: any) => state.orderBy);
 
   const setTableData = async (params: IApiRequest) => {
     updateTags([]);
@@ -62,6 +62,7 @@ export const Wrapper: FunctionComponent<{
   };
 
   const handlePageChange = (_: any, newPage: number): void => {
+    triggerEvent('page-change');
     updatePage(newPage);
   };
 

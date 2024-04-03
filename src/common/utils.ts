@@ -17,3 +17,8 @@ export const fetchTags = async (
     return error.name;
   }
 };
+
+export const triggerEvent = (name: string): void => {
+  const event = new CustomEvent(name);
+  document.dispatchEvent(event);
+};

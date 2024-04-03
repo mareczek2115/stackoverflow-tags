@@ -9,18 +9,18 @@ import {
 } from '@mui/material';
 
 import { IControlProps } from '../../common/types';
-import { useTempStore } from '../../store/store';
+import { useTagStore } from '../../store/store';
 
 import './SortOptions.css';
 
 export const SortOptions: FunctionComponent<IControlProps> = (
   props
 ): JSX.Element => {
-  const sortBy = useTempStore((state: any) => state.sortBy);
-  const orderBy = useTempStore((state: any) => state.orderBy);
+  const sortBy = useTagStore((state: any) => state.sortBy);
+  const orderBy = useTagStore((state: any) => state.orderBy);
 
-  const updateSorting = useTempStore((state: any) => state.updateSorting);
-  const updateOrder = useTempStore((state: any) => state.updateOrder);
+  const updateSorting = useTagStore((state: any) => state.updateSorting);
+  const updateOrder = useTagStore((state: any) => state.updateOrder);
 
   const setSorting = (event: SelectChangeEvent): void => {
     updateSorting(event.target.value as string);

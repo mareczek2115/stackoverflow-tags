@@ -8,7 +8,8 @@ Przygotować odpowiednie stany dla etapu ładowania danych i błędów przy pobi
 
 Wykorzystać gotową bibliotekę komponentów UI, np. MUI ✅
 
-Wykorzystać gotowe biblioteki do zarządzania stanem i pobierania danych (wybór wedle uznania, stosownie do stopnia komplikacji projektu i z myślą o jak najszybszej realizacji zadania) ✅
+Wykorzystać gotowe biblioteki do zarządzania stanem i pobierania danych (wybór wedle uznania, stosownie do stopnia komplikacji projektu i z myślą o jak najszybszej
+realizacji zadania) ✅
 
 Przygotować Storybook do prezentacji wykorzystanych komponentów składowych aplikacji ✅
 

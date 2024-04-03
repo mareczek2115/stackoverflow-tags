@@ -11,14 +11,14 @@ import {
 } from '@mui/material';
 
 import { ITag } from '../../common/types';
-import { useTempStore } from '../../store/store';
+import { useTagStore } from '../../store/store';
 
 import './Table.css';
 
 export const Table: FunctionComponent<{
   tags?: Array<ITag>;
 }> = (props): JSX.Element => {
-  const tags = useTempStore((state: any) => state.tags);
+  const tags = useTagStore((state: any) => state.tags);
 
   return (
     <div className="table">
